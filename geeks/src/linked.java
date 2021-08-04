@@ -113,19 +113,19 @@ private static void middleElementBySlowFast(Node head) {
         fast=fast.next.next;
     }
     System.out.println(slow.data);
-    
+   
 }
-}
-  //class Node{
+
+  class Node{
     int data;
     Node next;
     Node(int x){
         data=x;
         next=null;
-       
-
     }
+  }
 }
+
 
 
    
