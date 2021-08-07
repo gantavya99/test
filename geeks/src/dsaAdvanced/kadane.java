@@ -7,12 +7,12 @@ public class kadane {
     }
     static int maxSum(int a[]){
         int n=a.length;
-        int res=a[0];
+        int res=Integer.MIN_VALUE;
         int maxEnding=a[0];
         for(int i=1;i<n;i++){
             maxEnding=Math.max((maxEnding+a[i]),a[i]);
-            res=Math.max(res,maxEnding)
-            ;
+            res=Math.max(res,maxEnding);
+            
         }
         return res;
     }
