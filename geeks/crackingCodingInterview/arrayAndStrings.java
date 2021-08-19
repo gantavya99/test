@@ -6,7 +6,7 @@ public class arrayAndStrings{
    public static void main(String[] args) {
      String str="qwertyuiopasdfghjklzxcaaavbnm1234567890";
      System.out.println(isUnique(str));
-   }
+        }
    static boolean isUnique(String str){
        for(int i=0;i<str.length();i++){
            for(int j=i+1;j<str.length();j++){

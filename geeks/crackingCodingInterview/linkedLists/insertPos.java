@@ -7,7 +7,7 @@ public class insertPos {
        head.next.next=new Node(876);
        head.next.next.next=new Node(12);
        head.next.next.next.next=new Node(9);
-      insertEnd(head, -1);
+      insertpos(head,2,-890);
        printList(head);
     
       
@@ -40,6 +40,9 @@ public class insertPos {
            for(int i=0;i<pos-1;i++){
             curr=curr.next;
            }
+           temp.next=curr.next;
+           curr.next=temp;
+           return head;
        }
     
     static Node insertEnd(Node head, int data){
