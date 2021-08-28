@@ -7,13 +7,10 @@ public class insertPos {
        head.next.next=new Node(876);
        head.next.next.next=new Node(12);
        head.next.next.next.next=new Node(9);
-      insertpos(head,2,-890);
        printList(head);
-    
-      
-   
     }
-    static void printList(Node head){
+     
+     static void printList(Node head){
         if(head==null){
             return;
         }

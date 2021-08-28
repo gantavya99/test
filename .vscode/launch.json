@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch stringpalindrome",
+            "request": "launch",
+            "mainClass": "crackingCodingInterview.stringpalindrome",
+            "projectName": "test_d3743297"
+        },
+        {
+            "type": "java",
             "name": "Launch twoDArray",
             "request": "launch",
             "mainClass": "twoDArray",

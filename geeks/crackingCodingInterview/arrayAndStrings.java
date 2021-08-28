@@ -4,9 +4,24 @@ import java.util.HashSet;
 
 public class arrayAndStrings{
    public static void main(String[] args) {
-     String str="qwertyuiopasdfghjklzxcaaavbnm1234567890";
-     System.out.println(isUnique(str));
+     int a[]=new int[]{1,2,3,4,5};
+     
+     for(int i:a){
+         System.out.println(i);
+     }
         }
+    static void leftshift(int a[]){
+        int n=a.length;
+      int low=0;
+      int high=n-1;
+      while(high>low){
+          int temp=a[low];
+          a[low]=a[high];
+          a[high]=temp;
+          high--;
+          low++;
+      }
+}
    static boolean isUnique(String str){
        for(int i=0;i<str.length();i++){
            for(int j=i+1;j<str.length();j++){
