@@ -20,7 +20,7 @@ public static ArrayList<Integer> nearest(int a[]){
                 arl.add(-1);
             }
             else{
-                arl.add(s.peek());
+                arl.add(s.pop());
 
             }
            }
@@ -55,8 +55,35 @@ public static int[] nextLargerElement(int[] arr, int n)
     return nge;
 } 
 
+public static int[] bruteForce(int a[]){
+    int n=a.length;
+    int temp[]=new int[n];
+    for(int i=0;i<n;i++){
+        temp[i]=-1;
+    }
+    int k=0;
+    for(int i=0;i<n-1;i++){
+        for(int j=i+1;j<n;j++){
+            if(a[j]>a[i]){
+                temp[k++]=a[j];
+                break;
+            }
+        } 
+    }
+    return temp;
+}
 
-
+public static int[] stacksnearlarger(int a[]){
+    int n=a.length;
+    int temp[]=new int[n];
+    int k=0;
+    Stack<Integer>s=new Stack<Integer>();
+    for(int i=n-1;i>=0;i--){
+        
+        }
+        s.push(a[i]);
+    }
+}
 
 
 
@@ -86,7 +113,7 @@ public static int[] nearestGreaterLeft(int a[], int n){
 
 public static void main(String[] args) {
         int a[]=new int[]{1,3,2,4};
-        int res[]=nearestGreaterLeft(a, a.length);
+        int res[]=bruteForce(a);
         for(int i:res){
             System.out.println(i);
         }
